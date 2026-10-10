@@ -1,0 +1,2 @@
+-- Initial seed data for local testing
+-- e.g., INSERT INTO public.profiles (id, username) VALUES (...);
