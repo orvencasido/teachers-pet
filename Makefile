@@ -1,5 +1,9 @@
 .PHONY: setup verify test lint db-start db-stop db-reset db-status db-diff clean
 
+# Setup dependencies
+setup:
+	@which pnpm > /dev/null 2>&1 && pnpm install || npm install
+
 # Master Quality Gate
 verify: lint test
 
